@@ -1,0 +1,32 @@
+[
+    {
+        "bakongAccountID": "khqr@aclb",
+        "merchantName": "Chansamnang Lim",
+        "merchantCity": "Phnom Penh",
+        "optionalData": {
+            "accountInformation": "015606046",
+            "currency": "khr",
+            "amount": 10000
+        }
+    },
+    {
+        "bakongAccountID": "wing_khqr@wing",
+        "merchantName": "Chansamnang Lim",
+        "merchantCity": "Phnom Penh",
+        "optionalData": {
+            "accountInformation": "015606046",
+            "currency": "khr",
+            "amount": 10000
+        }
+    },
+    {
+        "bakongAccountID": "abaakhppxxx@abaa",
+        "merchantName": "Chansamnang Lim",
+        "merchantCity": "Phnom Penh",
+        "optionalData": {
+            "accountInformation": "015606046",
+            "currency": "usd",
+            "amount": 10000
+        }
+    }
+]

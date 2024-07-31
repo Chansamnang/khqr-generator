@@ -8,7 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bakong-khqr": "^1.0.17",
     "core-js": "^3.8.3",
+    "qrcode": "^1.5.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {
