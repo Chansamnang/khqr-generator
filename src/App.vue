@@ -13,7 +13,7 @@
     <div class="form-group">
       <label>Account Number: </label>
       <input
-        type="text"
+        type="number"
         v-model="bankAccountNumber"
         class="w200"
         @keyup="resetQRCode"
@@ -158,13 +158,15 @@ const reset = () => {
 
 const resetQRCode = () => {
   qrCodeData.value = "";
+  amount.value = Intl.NumberFormat('en', { maximumFractionDigits: 2 }).format(parseFloat(amount.value))
   submitted.value = false;
 };
 
 const formatAmount = (amount) => {
   console.log("amouhnt", amount);
-  return amount;
-  // return parseFloat(new Intl.NumberFormat("en").format(amount)).toFixed(2);
+  return new Intl.NumberFormat("en", { maximumFractionDigits: 15 }).format(
+    parseFloat(amount)
+  );
 };
 </script>
 
