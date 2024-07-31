@@ -29,11 +29,12 @@
         class="w200"
         @keyup="resetQRCode"
       />
+      <br>
       <span v-if="!bankAccountName && submitted" class="error">Required</span>
     </div>
     <div class="form-group">
       <label>Receive Amount: </label>
-      <input type="text" v-model="amount" class="w200" @keyup="resetQRCode" />
+      <input type="number" v-model="amount" class="w200" @keyup="resetQRCode" />
       <br />
       <span v-if="!amount && submitted" class="error">Required</span>
       <small v-else-if="amount.length > 13" class="error">Invalid Amount</small>
