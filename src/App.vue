@@ -13,7 +13,7 @@
     <div class="form-group">
       <label>Account Number: </label>
       <input
-        type="number"
+        type="text"
         v-model="bankAccountNumber"
         class="w200"
         @keyup="resetQRCode"
